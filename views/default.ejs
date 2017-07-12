@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>My App</title>
-</head>
-<body>
-<h1><%= title %></h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque necessitatibus, recusandae cumque maxime pariatur, rem a! Optio architecto, fugiat suscipit natus iusto fuga, beatae delectus est similique odio, aperiam repellendus!</p>
+<html lang="en">
+  <head><% include partials/page/head.ejs %></head>
+  <body class="<%= classname %>">
+    <% include partials/page/header.ejs %>
+    <div class="container">
+      <h1 class="text-center"><%= title %></h1>
 
-<% for(var i=0; i<users.length; i++) { %>
-  <li><%= users[i] %></li>
-<% } %>
-
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque necessitatibus, recusandae cumque maxime pariatur, rem a! Optio architecto, fugiat suscipit natus iusto fuga, beatae delectus est similique odio, aperiam repellendus!</p>
+    </div>
+    <% include partials/page/footer.ejs %>
+    <% include partials/page/jsdefaults.ejs %>
 </body>
 </html>
+
+
+
+
+
+
