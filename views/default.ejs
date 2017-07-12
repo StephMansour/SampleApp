@@ -4,9 +4,18 @@
   <body class="<%= classname %>">
     <% include partials/page/header.ejs %>
     <div class="container">
-      <h1 class="text-center"><%= title %></h1>
+      <h1 class="text-center"><%= pagetitle %> - <%= title %></h1>
 
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque necessitatibus, recusandae cumque maxime pariatur, rem a! Optio architecto, fugiat suscipit natus iusto fuga, beatae delectus est similique odio, aperiam repellendus!</p>
+
+      <% if(typeof(users) !== 'undefined') {%>
+        <ul>
+          <% for(i=0; i < users.length; i++) {%>
+             <li> <%= users[i] %> </li>
+          <% } %>
+        </ul>
+      <%} %>
+
     </div>
     <% include partials/page/footer.ejs %>
     <% include partials/page/jsdefaults.ejs %>
