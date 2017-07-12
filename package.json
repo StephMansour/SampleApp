@@ -9,6 +9,7 @@
   "author": "steph m.",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^2.5.6",
     "express": "^4.15.3",
     "node-dev": "^3.1.3"
   }
